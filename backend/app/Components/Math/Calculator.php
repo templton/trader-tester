@@ -2,7 +2,7 @@
 
 namespace App\Components\Math;
 
-class MathCalculator
+class Calculator
 {
     public static function setScale(int $scale): void
     {
