@@ -1,6 +1,6 @@
 <?php
 
-use App\Components\MarketApi\MarketApi;
+use App\Components\MarketApi\MarketApiFactory;
 use App\Enum\Currency;
 use App\Enum\Timeframe;
 use Illuminate\Support\Facades\Route;
@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $api = new MarketApi(MarketApi::SOURCE_BINANCE);
+    $api = MarketApiFactory::createBinance();
     $res = $api->load(
         Currency::BTCUSDT,
         Timeframe::H1,

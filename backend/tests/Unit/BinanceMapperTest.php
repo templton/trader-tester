@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use App\Components\MarketApi\Dto\Candle;
-use app\Components\MarketApi\Mappers\Binance\BinanceMapper;
+use App\Components\MarketApi\Mappers\Binance\BinanceMapper;
 use PHPUnit\Framework\TestCase;
 
 class BinanceMapperTest extends TestCase
