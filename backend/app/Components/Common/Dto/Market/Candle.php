@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Components\MarketApi\Dto;
+namespace App\Components\Common\Dto\Market;
 
 use DateTime;
 

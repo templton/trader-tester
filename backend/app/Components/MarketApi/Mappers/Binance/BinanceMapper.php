@@ -2,7 +2,7 @@
 
 namespace app\Components\MarketApi\Mappers\Binance;
 
-use App\Components\MarketApi\Dto\Candle;
+use App\Components\Common\Dto\Market\Candle;
 use App\Components\MarketApi\Mappers\MapperInterface;
 use DateTime;
 

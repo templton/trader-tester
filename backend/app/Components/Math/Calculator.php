@@ -4,6 +4,7 @@ namespace App\Components\Math;
 
 class Calculator
 {
+    // TODO В каждом методе обязательно принимать precision и сделать обертку с указанием precision
     public static function setScale(int $scale): void
     {
         bcscale($scale);

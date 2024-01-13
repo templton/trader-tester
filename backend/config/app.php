@@ -1,7 +1,8 @@
 <?php
 
+use App\Components\MarketApi\ServiceProvider\MarketApiServiceProvider;
+use App\Components\MarketLoader\ServiceProvider\MarketLoaderServiceProvider;
 use Illuminate\Support\Facades\Facade;
-use Illuminate\Support\ServiceProvider;
 
 return [
 
@@ -155,7 +156,7 @@ return [
     |
     */
 
-    'providers' => ServiceProvider::defaultProviders()->merge([
+    'providers' => MarketLoaderServiceProvider::defaultProviders()->merge([
         /*
          * Package Service Providers...
          */
@@ -169,6 +170,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         \App\Components\Math\ServiceProviders\ServiceProvider::class,
+        MarketApiServiceProvider::class,
+        \App\Components\MarketLoader\ServiceProvider\MarketLoaderServiceProvider::class,
     ])->toArray(),
 
     /*

@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use App\Components\MarketApi\Dto\Candle;
+use App\Components\Common\Dto\Market\Candle;
 use App\Components\MarketApi\Mappers\Binance\BinanceMapper;
 use PHPUnit\Framework\TestCase;
 

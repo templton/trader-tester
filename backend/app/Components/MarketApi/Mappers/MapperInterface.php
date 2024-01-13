@@ -2,7 +2,7 @@
 
 namespace App\Components\MarketApi\Mappers;
 
-use App\Components\MarketApi\Dto\Candle;
+use App\Components\Common\Dto\Market\Candle;
 
 interface MapperInterface
 {
