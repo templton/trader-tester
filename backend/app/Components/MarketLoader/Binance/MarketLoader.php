@@ -3,7 +3,7 @@
 namespace App\Components\MarketLoader\Binance;
 
 use App\Components\Common\Dto\Market\MarketLoadParams;
-use App\Components\MarketApi\Contracts\MarketApiInterface;
+use App\Components\MarketApi\MarketApiInterface;
 use App\Components\MarketLoader\Contracts\BinanceMarketLoaderInterface;
 use App\Components\MarketLoader\Stores\Contracts\Storable;
 use App\Enum\Currency;

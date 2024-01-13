@@ -29,7 +29,9 @@ Route::get('/', function () {
 
     $fileStore = new \App\Components\MarketLoader\Stores\File\FileStore();
 
-    $binanceLoader = App::make(BinanceMarketLoaderInterface::class);
+    $binanceLoader = (App::make(\App\Components\MarketLoader\MarketLoaderFactory::class))->createBinance();
+
+//    $binanceLoader = App::make(BinanceMarketLoaderInterface::class);
 //    $binanceLoader->resetCache(Currency::BTCUSDT);
     $binanceLoader->setStorable($fileStore);
 
